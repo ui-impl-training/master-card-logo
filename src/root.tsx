@@ -50,6 +50,7 @@ const StyledComponent = styled(Component)`
       width: ${PART_SIZE}px;
       height: ${PART_SIZE}px;
       border-radius: 50%;
+      // 実行の最後のキーフレームで設定された計算値を保持
       animation-fill-mode: forwards;
 
       &.red {
@@ -87,6 +88,7 @@ const StyledComponent = styled(Component)`
     }
   }
 
+  // styled の中に書いちゃえばビルトインのstyledが不要になる.
   @keyframes red {
     to {
       transform: translate(${PART_SIZE / 6}px);

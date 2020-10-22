@@ -1,5 +1,5 @@
 import { h } from "preact";
-import { styled, keyframes } from "goober";
+import { styled } from "goober";
 
 interface Props {
   className?: string;
